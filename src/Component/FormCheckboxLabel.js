@@ -148,13 +148,16 @@ const styles = () => ({
   },
 });
 
-const CheckboxGroup = ({ classes, variant, label }) => {
+const CheckboxGroup = ({ classes, variant,name,checked,onChange, label }) => {
   return (
     <div className={classes.checkbox}>
       <FormControlLabel
         control={<Checkbox className={classes[`checkboxVariant${variant}`]} />}
         label={label}
         className={classes.formControlLabel}
+        checked={checked}
+        onChange={onChange}
+        name={name}
       />
     </div>
   );
