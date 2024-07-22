@@ -14,7 +14,6 @@ const App = () => {
 
   const handleAllPagesChange = (event) => {
     const isChecked = event.target.checked;
-    console.log({isChecked})
     setAllChecked(isChecked);
     setCheckedItems({
       page1: isChecked,
